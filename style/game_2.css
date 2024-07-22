@@ -29,9 +29,10 @@ body {
 
 .board-container {
     position: relative;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .main-board {
@@ -139,6 +140,14 @@ button {
     .main-image {
         width: 480px; /* Adjust to your needs */
     }
+
+    .board-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -150,6 +159,10 @@ button {
 
     .main-image {
         width: 350px; /* Adjust to your needs */
+    }
+
+    .board-container {
+        display: column;
     }
 }
 
