@@ -60,11 +60,14 @@ body {
     align-items: center;
     margin-top: 20px;
     padding-left: 10px;
+    position: relative;
 }
+
 
 .dice-container img {
     width: 50px; 
     margin-bottom: 20px;
+  
 }
 
 .dice-container img.rolling {
@@ -138,7 +141,7 @@ button {
     }
 
     .main-image {
-        width: 480px; /* Adjust to your needs */
+        width: 480px; 
     }
 
     .board-container {
@@ -158,7 +161,7 @@ button {
     }
 
     .main-image {
-        width: 350px; /* Adjust to your needs */
+        width: 350px; 
     }
 
     .board-container {
@@ -383,13 +386,6 @@ button {
     height: 50px; /* or the size of your pawn */
     transition: transform 0.5s ease; 
 }
-
-
-
-
-
-
-
 
 @keyframes movePawn {
     from {

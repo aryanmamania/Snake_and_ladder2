@@ -15,6 +15,7 @@
                 <h1>Snake and Ladder Game</h1>
                 <h2>Select Number of Players (1-4):</h2>
                 <input type="number" id="num-players" min="1" max="4" value="1">
+
                 <button onclick="setupPlayers()">Next</button>
                 <div id="player-names">    </div>
              <div id="startbutton">
@@ -27,9 +28,11 @@
                 <img class="main-image" src="./assets/snakeandladderboard3.jpg" alt="Snake and Ladder Board">
                 <div class="dice-container">
                     <audio id="diceSound" src="/assets/dice-142528.mp3"></audio>
-                    <img src="assets/dice1.png" id="dice-id" onclick="roll()"> 
+                    <img src="assets/dice1.png" id="dice-id"  onclick="roll()"> 
+    
+
                     <button onclick="roll()">Roll Dice</button> 
-                    <button id="quitButton">Quit</button>
+                 
                     <div id="turn-indicator"></div>
                 </div>
             </div>
