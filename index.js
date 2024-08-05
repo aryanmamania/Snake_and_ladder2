@@ -31,7 +31,7 @@ const Winner_CLASS = "winner";
 let currentPlayer = 1;
 let playerCount = 1;
 let playerNames = [];
-const playerPositions = [1, 1, 1, 1]; // Players start at position 1
+const playerPositions = [1, 1, 1, 1]; 
 
 function showPlayerSelection() {
     document.querySelector('.board-container').style.display = 'none';
@@ -168,7 +168,7 @@ function changeCurrentPosition(diceValue) {
     }
 
     if (isGameComplete(newPosition)) {
-        winnerSound.play(); // Play winner sound when a player wins
+        winnerSound.play(); 
         Swal.fire({
             title: "Congratulations!",
             text: `🚀 ${playerNames[currentPlayer - 1]} has successfully completed the game! 🏆🌟`,

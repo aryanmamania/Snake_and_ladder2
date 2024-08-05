@@ -5,8 +5,6 @@
     --board-size-S: 350px;
 }
 
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -153,6 +151,43 @@ button {
     }
 }
 
+
+@media screen and (max-width: 1260px) {
+    .container {
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dice-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .main-board {
+        width: var(--board-size-M);
+        height: var(--board-size-M);
+        margin: 5px;
+    }
+
+    .main-image {
+        width: 480px; 
+    }
+
+    .board-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+
 @media screen and (max-width: 480px) {
     .main-board {
         width: var(--board-size-S);
@@ -251,7 +286,6 @@ button {
     margin-bottom: 5px;
 }
 
-/* Add any necessary styles for player indicators */
 #turn-indicator {
     font-size: 1.5em;
     margin-top: 20px;
@@ -353,11 +387,6 @@ button {
     margin-top: 20px;
 }
 
-
-
-
-
-
 .player1 {
     background-image: url('assets/pawn1.png');
     background-size: cover;
@@ -382,8 +411,8 @@ button {
 
 .pawn {
     position: absolute;
-    width: 50px; /* or the size of your pawn */
-    height: 50px; /* or the size of your pawn */
+    width: 50px; 
+    height: 50px; 
     transition: transform 0.5s ease; 
 }
 
@@ -398,7 +427,7 @@ button {
 
 .pawn {
     position: absolute;
-    transition: transform 0.5s ease; /* Smooth transition */
+    transition: transform 0.5s ease; 
 }
 
 .player1, .player2, .player3, .player4 {
