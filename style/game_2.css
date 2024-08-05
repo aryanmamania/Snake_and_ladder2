@@ -121,35 +121,22 @@ button {
 }
 
 @media screen and (max-width: 1260px) {
-    .container {
-        display: flex;
-        max-width: fit-content;
-    }
-
-    .dice-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
     .main-board {
-        width: var(--board-size-M);
-        height: var(--board-size-M);
-        max-width: fit-content;
+        width: var(--board-size-S);
+        height: var(--board-size-S);
         margin: 5px;
     }
 
     .main-image {
-        width: 480px; 
+        width: 350px; 
+        height: 350px;
     }
 
     .board-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: flex;
+        display: column;
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .container {
