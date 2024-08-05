@@ -123,7 +123,7 @@ button {
 @media screen and (max-width: 1260px) {
     .container {
         display: flex;
-    
+        max-width: fit-content;
     }
 
     .dice-container {
@@ -134,6 +134,7 @@ button {
     .main-board {
         width: var(--board-size-M);
         height: var(--board-size-M);
+        max-width: fit-content;
         margin: 5px;
     }
 
