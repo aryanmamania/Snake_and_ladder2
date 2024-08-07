@@ -120,11 +120,42 @@ button {
     background-position-y: 0cqmax ;
 }
 
+
 @media screen and (max-width: 1260px) {
+
+    .container{
+        object-fit: contain;
+    }
+
     .main-board {
         width: var(--board-size-S);
         height: var(--board-size-S);
         margin: 5px;
+       object-fit: contain;
+    }
+
+    .main-image {
+        width: 350px; 
+        height: 350px;
+    }
+
+    .board-container {
+        display: column;
+    }
+}
+
+
+@media screen and (max-width: 1360px) {
+
+    .container{
+        object-fit: contain;
+    }
+
+    .main-board {
+        width: var(--board-size-S);
+        height: var(--board-size-S);
+        margin: 5px;
+       object-fit: contain;
     }
 
     .main-image {
